@@ -6,8 +6,8 @@ export default defineConfig([
   {
     name: 'grace-church',
     title: 'Grace Church',
-    projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID,
-    dataset: import.meta.env.PUBLIC_SANITY_DATASET,
+    projectId: 'qb55zhrg',
+    dataset: 'production',
     basePath: '/admin/church',
     plugins: [structureTool(), visionTool()],
   },
