@@ -19,9 +19,6 @@ export default defineConfig({
   output: 'server',
 
   integrations: [sanity({
-    projectId: 'qb55zhrg',
-    dataset: 'production',
-    useCdn: false,
     studioBasePath: '/admin/church'
   }), react()],
 
