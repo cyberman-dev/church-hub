@@ -15,8 +15,8 @@ export default defineConfig({
   output: 'server',
 
   integrations: [sanity({
-    projectId: process.env.SANITY_PROJECT_ID || '',
-    dataset: process.env.SANITY_DATASET || '',
+    projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID,
+    dataset: import.meta.env.PUBLIC_SANITY_DATASET,
     useCdn: false,
     studioBasePath: '/admin/church'
   }), react()],
