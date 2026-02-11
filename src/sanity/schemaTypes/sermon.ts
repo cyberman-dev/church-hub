@@ -19,6 +19,12 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'speaker',
+      title: 'Speaker',
+      type: 'reference',
+      to: [{type: 'speaker'}],
+    }),
+    defineField({
       name: 'videoUrl',
       title: 'Video URL',
       type: 'url',
